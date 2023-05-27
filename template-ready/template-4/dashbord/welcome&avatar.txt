@@ -1,0 +1,64 @@
+/* Start Welcome widget */
+.welcome {
+    overflow: hidden;
+}
+.welcome .intro img {
+    width: 170px;
+    margin-bottom: -17px;
+}
+.welcome .avatar {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -33px;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+.welcome .body {
+    border-top: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.welcome .body > div {
+    flex: 1;
+
+}
+.welcome .visit {
+    margin: 15px 13px 15px auto;
+    transition: 0.3s;
+}
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+@media(max-width:767px){ 
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+    .welcome .avatar {
+        margin-left: -40px;
+    }
+    .welcome .body >div:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+/* End Welcome widget */
+html
+       <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+                    <div class="intro p-20 d-flex  space-between bg-eee ">
+                        <div>
+                        <h2 class="m-0">Welcome</h2>
+                        <p class="c-grey mt-5"> Elazeor</p>
+                        </div>
+                        <img class="hide-mobile" src="../template-4/image/welcome.png" alt="avatar">
+                    </div> 
+                    <img src="../template-4/image/avatar.png" alt="" class="avatar ">   
+                    <div class="body txt-c d-flex p-20 mt-20 block-mobile ">
+                        <div> Osama ELzero <span class="d-block c-grey fs-14 mt-10">Developer</span></div>
+                        <div> 80 <span class="d-block c-grey fs-14 mt-10">Projects</span></div>
+                        <div> $9000<span class="d-block c-grey fs-14 mt-10">Erned</span></div>
+                    </div>      
+                    <a href="profile" class="visit d-block fs-14 rad-6 bg-blue c-white w-fit">profile</a>    
+                </div>
+                </div>

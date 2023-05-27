@@ -1,0 +1,57 @@
+.packup-manager .date input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.packup-manager .date label{
+  padding: 3px 0px 3px 30px;
+  cursor: pointer;
+  position: relative;
+}
+.packup-manager .date label::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+height: 18px;
+border: 2px solid var(--grey-color);
+border-radius: 50%;
+}
+.packup-manager .date label::after{
+  content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: 3px;
+    background-color: var(--blue-alt-color);
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.packup-manager .date input[type="radio"]:checked + label::after{
+  transform: scale(1);
+}
+.packup-manager .date input[type="radio"]:checked + label::before{
+  border-color: var(--blue-color);
+  transform: scale(1);
+}
+html
+  <div class=" packup-manager p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Backup Manager</h2>
+                    <p class="mt-0 mb20 c-gray fs15">control packup time & location</p>
+                    <div class="date d-flex align-center mb-15">
+                        <input type="radio" name="time" id="daily" checked/>
+                        <label for="daily">Daily</label>
+                    </div>
+                    <div class="date d-flex align-center mb-15">
+                        <input type="radio" name="time" id="weekly" />
+                        <label for="weekly">Weekly</label>
+                    </div>
+                    <div class="date d-flex align-center mb-15">
+                        <input type="radio" name="time" id="monthly" />
+                        <label for="monthly">Monthly</label>
+                    </div>
+                    
+                    </div>

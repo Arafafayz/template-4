@@ -1,0 +1,119 @@
+    <!-- Start Target  -->
+                 <div class="targets p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10 ">  Yearly Target</h2>
+                    <p  class="mt-0 mb-20 c-grey  fs-15">Target of the year </p>
+                    <div class="target-row mb-20 blue  d-flex align-center   ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-dollar-sign "></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Money</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">$20.000</span>
+                            <div class="progress p-relative">
+                                <span class="bg-blue blue" style="width: 80%">
+                                <span class="bg-blue">80%</span>
+                            </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="target-row mb-20 orange  d-flex align-center   ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-code fa-lg c-orange"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Money</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">$20.000</span>
+                            <div class="progress p-relative">
+                                <span class="bg-orange orange" style="width: 75%">
+                                <span class="bg-orange">75%</span>
+                            </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="target-row mb-20 green  d-flex align-center   ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-user fa-lg c-green"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Money</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">$20.000</span>
+                            <div class="progress p-relative">
+                                <span class="bg-green green" style="width: 40%">
+                                <span class="bg-green">40%</span>
+                            </span>                     
+                            </span>
+                            </div>
+                          </div>
+                    </div>
+                 </div>
+css
+  /* Start Targets */
+  .targets .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+      
+  } 
+  .targets .target-row .icon  i {
+    position: relative;
+    top: 50px;
+    transform: translateY(-15px);
+  }
+  .targets .details {
+    flex: 1;
+
+  }
+  .targets .details  .progress {
+    height: 4px;
+    
+  }
+  .targets .details  .progress > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    
+  }
+  .targets .details  .progress > span span  {
+    position: absolute;
+    bottom: 19px;
+    right: -16px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    
+  }
+  .targets .details  .progress > span span::after  {
+    content: "";
+    color: transparent;
+    border: 9px solid;
+    position: absolute;
+    top: 21px;
+    right: 9px;
+    
+  }
+  .targets .details  .progress > .blue span::after {
+    border-top-color: var(--blue-alt-color) ;
+  }
+  .targets .details  .progress > .orange span::after {
+    border-top-color: var(--orange-color) ;
+  }
+  .targets .details  .progress > .green span::after {
+    border-top-color: var(--green-color) ;
+  }
+  .blue .icon,
+  .blue .progress {
+    background-color: #9dbee4;
+  }
+  .orange .icon,
+  .orange .progress {
+    background-color: rgb(236, 219, 190);
+  }
+  .green .icon,
+  .green .progress {
+    background-color: #9ee7b1;
+  }
+
+  /* End  Targets */

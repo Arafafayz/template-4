@@ -1,0 +1,52 @@
+.landing .angle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+}
+.landing  .fa-angle-left{
+    color: aqua;
+    left: 20px;
+}
+.landing .fa-angle-right{
+    color: blue;
+    right: 20px;
+}
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    margin: 2px;
+}
+.landing  ul li.active {
+    background-color: var(--main-color);
+}
+
+html
+  <i class="fas fa-angle-left  angle"></i>
+    <i class="fas fa-angle-right  angle"></i>
+    <ul class="bullets">
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+    </ul>
+
+ظبط الحجم 
+@media(max-width:767px){
+    .landing .text .content {
+         max-width: 100%;
+    }
+}للنص 
+@media(max-width:767px){
+    .landing .text {
+        width: 100%;
+    }
+}للمساحه الملونه

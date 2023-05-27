@@ -1,0 +1,82 @@
+/* Statr Services*/
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.services .container {
+
+}
+@media (min-width:768px){
+   .services .container .servicses-container {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(350px,1fr))
+       grid-column-gap: 20px;
+       grid-row-gap: 50px
+    }
+}
+.services .srv-box{
+    display: flex;
+
+}
+.services .srv-box i{
+    margin-right: 50px;
+    color: var(--transparent-color);
+
+}
+.srv-box h2{
+    margin-bottom: 20px;
+    color: var(--transparent-color);
+
+}
+.srv-box p{
+    line-height: 2;
+    color: #777;
+
+}
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+<!-- Start services -->
+<div class="services">
+    <div class="container">
+        <div class="main-heading">
+            <h2>Services</h2>
+            <p>  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                tincidunt.</p>
+        </div>
+        <div class="servicses-container">
+            <div class="srv-box">
+                <i class="fa-solid fa-house-laptop"></i>
+                <div class="text">
+                    <h2>portfolio</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                    tincidunt.</p>
+                </div>
+                </div>
+                <div class="srv-box">
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <div class="text">
+                        <h2>portfolio</h2>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                        tincidunt.</p>
+                    </div>
+                    </div>
+                    <div class="srv-box">
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <div class="text">
+                            <h2>portfolio</h2>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                            tincidunt.</p>
+                        </div>
+                        </div>
+                        <div class="srv-box">
+                            <i class="fa-solid fa-house-laptop"></i>
+                            <div class="text">
+                                <h2>portfolio</h2>
+                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                                tincidunt.</p>
+                            </div>
+                            </div>
+            
+            
+        </div>
+    </div>
+</div>

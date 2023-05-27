@@ -1,0 +1,46 @@
+ <div class="main-heading">
+        <h2>Services</h2>
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt.</p>
+    </div>
+العنوان والخط والدائره فى منتصف الخط اسفل العنوان 
+.main-heading{
+text-align: center;
+padding: 50px;
+}
+.main-heading h2{
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.main-heading h2::before{
+    content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+
+}
+.main-heading h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10px;
+    background-color: white;
+    bottom: -25px;
+    width: 10px;
+    border-radius: 50% solid black;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.main-heading p
+{
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto 100px;
+}

@@ -1,0 +1,201 @@
+<div class="our-skills">
+    <div class="container">
+        <div class="testimonials">
+            <h3>testimonials</h3>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                 elit, eget tincidunt.
+            </p>
+            <div class="content">
+                <img src="images/skills-01.jpg" alt="">
+                <div class="text">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                 elit, eget tincidunt.
+                 <p>John Doe, CEO</p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="images/skills-02.jpg" alt="">
+                <div class="text">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                 elit, eget tincidunt.
+                 <p>John Doe, CEO</p>
+                </div>
+            </div>
+            <ul class="bullets">
+                <li></li>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h3>skills</h3>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                 elit, eget tincidunt.
+            </p>
+            <div class="prog-holder">
+                <h4>Adobe</h4>
+                <div class="prog">
+                    <span style="width:90%" data-progres="90%"> </span>
+                </div>
+            </div>
+            <div class="prog-holder">
+                <h4>Adobe</h4>
+                <div class="prog">
+                    <span style="width:85%" data-progres="85%"> </span>
+                </div>
+            </div>
+            <div class="prog-holder">
+                <h4>Adobe</h4>
+                <div class="prog">
+                    <span style="width:90%" data-progres="90%"> </span>
+                </div>
+            </div>
+            <div class="prog-holder">
+                <h4>Adobe</h4>
+                <div class="prog">
+                    <span style="width:95%" data-progres="95%"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- End Skills -->
+css
+/* Start Skills */
+  
+  .our-skills {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+
+  }
+  .our-skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+  }
+  @media(min-width:992px){
+    .our-skills .container > div {
+        flex-basis: 45%;
+    }
+  }
+  .our-skills .container > div > h3 {
+    font-weight: normal;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+  }
+  .our-skills .container > div > p {
+    color: #777;
+    margin-bottom: 60px;
+    line-height: 2;
+    font-size: 20px;
+    text-align: center;
+  }
+  .our-skills .testimonials .content {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .our-skills .testimonials .content img {
+    width: 140px;
+    border-radius: 51%;
+    margin-right: 53px;
+    position: relative;
+    top: -47px;
+    
+    
+  }
+  @media(max-width:767px){
+    .our-skills .testimonials .content {
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .our-skills .testimonials .content img {
+        margin: 0 auto 30px
+    }
+  }
+  .our-skills .testimonials .content .text p {
+    text-align: end;
+  }
+  .our-skills .testimonials .text {
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 80px;
+
+  }
+  .our-skills .testimonials .text .p {
+    color: #777;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+  }
+  .our-skills .testimonials .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .our-skills .testimonials .bullets li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .our-skills .testimonials .bullets li.active {
+    background-color: rgb(56, 206, 206);
+    border-color: rgb(56, 206, 206);
+  }
+  .our-skills  .prog-holder {
+    
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .our-skills  .prog-holder h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+  .our-skills  .prog-holder .prog {
+    background-color: #dedadc;
+    height: 30px;
+  }
+
+  .our-skills  .prog-holder  span {
+    display: block;
+    background-color: var(--transparent-color);
+    height: 100%;
+    position: relative;
+
+  }
+
+  .our-skills  .prog-holder  span::after {
+    content: attr(data-progres);
+    position: absolute;
+    height: 29px;
+    width: 40px;
+    background-color: black;
+    border-radius: 20%;
+    right: -19px;
+    top: -45px;
+    color: white;
+    padding: 8px 4px 0px 6px;
+}
+.our-skills  .prog-holder  span::before {
+    content: "";
+   position: absolute;
+border: 11px solid;
+border-color: black transparent transparent transparent;
+right: -9px;
+top: -12px;
+}

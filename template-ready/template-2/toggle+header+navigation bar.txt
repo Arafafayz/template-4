@@ -1,0 +1,95 @@
+img {
+    height: 50px;
+}
+header{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+} 
+header .container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px );
+    height: 5px;
+    border-bottom: 4px solid var(--main-color);
+}
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+} 
+
+
+header nav .toggle {
+    color: rebeccapurple;
+    display: flex;
+    align-items: center;
+}
+@media(min-width:767px){
+    header nav .toggle {
+        display: none;}
+       
+
+}
+header nav .toggle:hover+ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 50, 30, 50%);
+    top: 100%;
+}
+header nav .toggle:hover+ul a{
+    border-bottom: 1px solid black;
+}
+
+header nav ul {
+    display: flex;  
+} 
+
+@media(max-width:768px){
+    header nav ul {
+        display: none;}
+        
+}
+
+
+
+header nav ul a.active,
+header nav ul a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+header nav ul a{
+    
+    padding: 15px;
+    display: block;
+    justify-content: flex-end;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header .form{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 20px;
+    border-left: 1px solid rgb(14, 1, 1);
+    margin-top: 10px;
+} 
+header .form i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+} 

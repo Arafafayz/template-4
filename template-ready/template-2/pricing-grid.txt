@@ -1,0 +1,176 @@
+   /* Start pricing */
+     .pricing {
+        padding-top: var(--section-padding);
+        padding-bottom: var(--section-padding);
+        
+     }
+     .pricing  .plans{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+     }
+     .pricing  .plan{
+        background-color: #fcfcfc;
+       
+        text-align: center;
+
+     }
+     .pricing .container .head {
+        padding: 40px 20px;
+        border-top: 1px solid var(--transparent-color);
+        border-bottom: 1px solid var(--transparent-color);
+     }
+     .pricing .container .head h3 {
+        font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+        
+     }
+     .pricing .container .head span  {
+        font-size: 60px;
+    font-weight: bold;
+    position: relative;
+     }
+     .pricing .container .head span::before  {
+    content:"$";
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+     }
+     .pricing .container .head span::after  {
+        content:"/Mo";
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+        font-weight: normal;
+        margin-left: 15px;
+
+     }
+     .pricing .plans .plan ul {
+        border-bottom: 1px solid var(--transparent-color);
+
+     }
+     .pricing .plans .plan ul  li  {
+        padding: 20px;
+         position: relative;
+    
+    
+     }
+     .pricing .plans .plan ul li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        width: 130px;
+        height: 1px;
+        background-color: var(--transparent-color);
+        /* top: 50%; */
+        transform: translateX(-65px);
+        bottom: 0;
+        left: 50%;
+     }
+     .pricing  .plans a {
+        background-color: transparent;
+    display: block;
+    padding: 20px 10px;
+    border: 1px solid var(--transparent-color);
+    text-decoration: none;
+    width: fit-content;
+    margin: 30px auto;
+     }
+
+     .pricing .contact-text {
+        padding: 50px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+     }
+     .pricing .contact-link {
+      padding: 15px 30px;
+     margin: 10px auto;
+      text-decoration: none;
+      display: block;
+      width: fit-content;
+      background-color: var(--main-color);
+
+     }
+html
+ <!-- Start Pricing -->
+    <div class="pricing">
+        <div class="container">
+            <div class="main-heading">
+                <h2>PRICING</h2>
+                <p>  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                    tincidunt.
+                </p>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <div class="head">
+                        <h3>Basic</h3>
+                        <span>19</span>
+                      </div>
+                      <ul>
+                        <li>Feature No 1</li>
+                        <li>Extra Feature</li>
+                        <li>Extra Feature No 2</li>
+                        <li>Feature</li>
+                      </ul>
+                      <div class="foot">
+                        <a href="#">Buy Now</a>
+                      </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <h3>PREMIUM</h3>
+                        <span>29</span>
+                      </div>
+                      <ul>
+                        <li>Feature No 1</li>
+                        <li>Extra Feature</li>
+                        <li>Extra Feature No 2</li>
+                        <li>Feature</li>
+                      </ul>
+                      <div class="foot">
+                        <a href="#">Buy Now</a>
+                      </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <h3>PRO</h3>
+                        <span>39</span>
+                      </div>
+                      <ul>
+                        <li>Feature No 1</li>
+                        <li>Extra Feature</li>
+                        <li>Extra Feature No 2</li>
+                        <li>Feature</li>
+                      </ul>
+                      <div class="foot">
+                        <a href="#">Buy Now</a>
+                      </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <h3>PLATINUM</h3>
+                        <span>49</span>
+                      </div>
+                      <ul>
+                        <li>Feature No 1</li>
+                        <li>Extra Feature</li>
+                        <li>Extra Feature No 2</li>
+                        <li>Feature</li>
+                      </ul>
+                      <div class="foot">
+                        <a href="#">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+            <p class="contact-text"> Contact us if you have special request</p>
+            <a href="#" class="contact-link">contact US</a>
+           
+        </div>
+    </div>
+    <!-- End Pricing -->
+   </body>
+</html>

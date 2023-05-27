@@ -1,0 +1,83 @@
+ <div class="content w-full " >
+            <!-- start head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input  class="p-10" type="search" placeholder="Type A keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                <span class=" notification  p-relative">
+                 <i class="fa-regular fa-bell fa-lg"></i>
+                </span>
+                <img src="../template-4/image/avatar.png" alt="">
+                </div>
+            </div>
+.content {
+overflow: hidden;
+}
+.head .search::before{
+    
+    content: "";
+}
+.head .search i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #ccc;
+  
+}
+.head .search input {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-left: 25px;
+    margin-left: 5px;
+    width: 160px;
+    transition: 0.3s;
+    
+
+}
+.head .search input:focus {
+    width: 200px;
+    
+
+}
+.head .search input:focus::placeholder {
+    opacity: 0;
+
+}
+.head img {
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+.head .icons .notification::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    right: 0px;
+    top: -2px;
+    
+}
+.page h1 {
+    margin: 20px 20px 40px;
+}
+.page h1::before,
+.page h1::after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.page h1::before {
+    background-color: white;
+    width: 120px;
+}
+.page h1::after {
+    background-color: black;
+    width: 60px;
+}

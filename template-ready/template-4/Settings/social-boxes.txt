@@ -1,0 +1,54 @@
+/*Start  social-boxes */
+.settings-page .social-boxes i{
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+
+}
+.settings-page .social-boxes input{
+  
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+  
+}
+.settings-page .social-boxes > div:focus-within i{
+  color: black;
+  
+}
+.settings-page .social-boxes i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*End  social-boxes */
+html
+   <!-- Start Social Info -->
+               <div class=" social-boxes p-20 bg-white rad-10">
+                <h2 class="mt-0 mb-10">Social Info</h2>
+                <p class="mt-0 mb20 c-gray fs15">Lorem ipsum dolor sit amet.</p>
+                <div class="twitter d-flex    mb-15">
+                    <i class="fa-brands fa-twitter center-flex c-grey "></i>
+                    <input class="w-full" type="text" placeholder="Twitters Username">
+                </div>
+                <div class="twitter d-flex    mb-15">
+                    <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                    <input class="w-full" type="text" placeholder="Twitters Username">
+                </div>
+                <div class="twitter d-flex    mb-15">
+                    <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                    <input class="w-full" type="text" placeholder="Twitters Username">
+                </div>
+                <div class="twitter d-flex    mb-15">
+                    <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                    <input class="w-full" type="text" placeholder="Twitters Username">
+                </div>
+                
+                </div>
+              <!-- End  Social Info -->

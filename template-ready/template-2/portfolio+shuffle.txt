@@ -1,0 +1,155 @@
+css portfolio
+/* Start Portfolio */
+.portfolio{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.portfolio .shuffle {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .shuffle li {
+    padding: 15px;
+}
+.portfolio .shuffle li.active {
+    background-color:var(--main-color);
+    color: white;
+}
+.portfolio .imags-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  
+}
+.portfolio .imags-container .box{
+    overflow: hidden;
+    position: relative;
+
+}
+.portfolio .imags-container .box:hover .caption {
+bottom: 0;
+}
+.portfolio .imags-container .box:hover img {
+transform: rotate(6deg) scale(1.5);
+
+}
+@media(min-width:768px){
+.portfolio .imags-container .box {
+        flex-basis: 50% ;
+    }
+}
+@media(min-width:1199px){
+    .portfolio .imags-container .box {
+            flex-basis: 25% ;
+        }
+    }
+.portfolio .imags-container .box img {
+    width: 100%;
+    transition: 0.5s;
+}
+.portfolio .imags-container .box .caption{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+
+}
+.portfolio .imags-container .box .caption h2 {
+font-weight: normal;
+margin-bottom: 10px;
+}
+.portfolio .imags-container .box .caption p {
+    color: var(--main-color);
+}
+.portfolio .more {
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    width: fit-content;
+    margin: 30px auto;
+    text-transform: uppercase;
+    background-color: rgb(56 137 206);
+    padding: 10px 15px;
+    color: white;
+}
+html protfolio
+<!-- Start Portfolio -->
+<div class="portfolio">
+    <div class="container">
+        <div class="main-heading">
+            <h2>portfolio</h2>
+            <p>  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                tincidunt.
+            </p>
+        </div>
+        <ul class="shuffle">
+            <li class="active">All</li>
+            <li>App</li>
+            <li>Photo</li>
+            <li>Web</li>
+            <li>Print</li>
+           </ul>
+    </div>
+    <div class="imags-container">
+        <div class="box">
+            <img src="images/shuffle-01.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-02.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-03.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-04.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-05.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-06.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-07.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shuffle-08.jpg" alt="">
+            <div class="caption">
+                <h2>Photography</h2>
+                <p>Awesome Image</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="more">More</a>
+</div>

@@ -1,0 +1,128 @@
+   <div class="projects p-20 bg-white rad-10 m-20 ">
+                    <h2 class="mt-0 mb-20">Projects</h2>
+                    <div class="responsev-table">
+                        <table class="fs-15 w-full">
+                            <thead>
+                                <tr>
+                                    <td>name </td>
+                                    <td> Finish date</td>
+                                    <td> Client</td>
+                                    <td>team</td>
+                                    <td>price</td>
+                                    <td>status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ministry wikibedia </td>
+                                    <td> 10 may </td>
+                                    <td> ministry</td>
+                                    <td>
+                                        <img src="../template-4/image/team-01.png" alt="">
+                                        <img src="../template-4/image/team-02.png" alt="">
+                                        <img src="../template-4/image/team-03.png" alt="">
+                                        <img src="../template-4/image/team-04.png" alt="">
+                                        <img src="../template-4/image/team-05.png" alt="">
+                                        
+                                    </td>
+                                    <td>$800</td>
+                                    <td> 
+                                        <span class="lable bg-blue c-white btn-shape">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wikibedia </td>
+                                    <td> 10 may </td>
+                                    <td> ministry</td>
+                                    <td>
+                                        <img src="../template-4/image/team-01.png" alt="">
+                                        <img src="../template-4/image/team-02.png" alt="">
+                                        <img src="../template-4/image/team-03.png" alt="">
+                                        <img src="../template-4/image/team-04.png" alt="">
+                                        <img src="../template-4/image/team-05.png" alt="">
+                                        
+                                    </td>
+                                    <td>$800</td>
+                                    <td> 
+                                        <span class="lable bg-green c-white btn-shape">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wikibedia </td>
+                                    <td> 10 may </td>
+                                    <td> ministry</td>
+                                    <td>
+                                        <img src="../template-4/image/team-01.png" alt="">
+                                        <img src="../template-4/image/team-02.png" alt="">
+                                        <img src="../template-4/image/team-03.png" alt="">
+                                        <img src="../template-4/image/team-04.png" alt="">
+                                        <img src="../template-4/image/team-05.png" alt="">
+                                        
+                                    </td>
+                                    <td>$800</td>
+                                    <td> 
+                                        <span class="lable bg-red c-white btn-shape">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wikibedia </td>
+                                    <td> 10 may </td>
+                                    <td> ministry</td>
+                                    <td>
+                                        <img src="../template-4/image/team-01.png" alt="">
+                                        <img src="../template-4/image/team-02.png" alt="">
+                                        <img src="../template-4/image/team-03.png" alt="">
+                                        <img src="../template-4/image/team-04.png" alt="">
+                                        <img src="../template-4/image/team-05.png" alt="">
+                                        
+                                    </td>
+                                    <td>$800</td>
+                                    <td> 
+                                        <span class="lable bg-orange c-white btn-shape">pending</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    </div>
+css
+/* Start Project table */
+.projects .responsev-table{
+  overflow-x: auto;
+}
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+
+}
+.projects thead td {
+background-color: #eee;
+font-weight: bold;
+}
+.projects table td  {
+  padding: 15px;
+}
+.projects tbody tr:hover td {
+  background-color: #b89ab3;
+}
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+.projects tbody td:last-child {
+  border-right: 1px solid #eee;
+}  
+.projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.projects table img:not(:first-child){
+  margin-left:-20px ;
+}
+/* End Project table */
